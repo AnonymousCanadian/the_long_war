@@ -25,9 +25,9 @@ set-bg: img/map_2.jpg
 new-page: true
 
 
-> * The initial phase of the action ends, and somehow, both sides remain standing.*
+> * The initial phase of the action ends, and somehow, both sides remain standing. *
 
-> *The war settles into fixed battle lines. This will not be a quick coup, but a long civil war. The nation will destroy itself before it can be rebuilt again.*
+> *The war settles into fixed battle lines. This will not be a quick coup, but a long civil war. The nation will destroy itself before it can be rebuilt again. *
 
  - Social Democracy: An Alternate History
 
@@ -1031,6 +1031,12 @@ Q.trotsky_advisor = 0;
 
 !}
 
+
+> * Germany is currently in the grip of a civil war, a brutal affair that has no obvious end. Thousands of lives have already been extinguished, and it is likely that the war will not stop until Germany's cities are reduced to ruins. *
+
+> * While we might want to call for foreign assistance, the foreign powers see the "Prussian Coup" as a purely internal matter. *
+
+ - Social Democracy: An Alternate History
 
 For more information on the history of the Weimar Republic, see the "Library" page on the top left. (Modder note: Not yet implemented) If this is your first time playing the game, it is recommended that you read at least some of this information.
 
@@ -2038,6 +2044,12 @@ Q.trotsky_advisor = 0;
 !}
 
 
+> * Adolf Hitler has taken power in Germany. However, we have rallied the democratic forces of the country against him, and are fighting back. The outcome of this war is uncertain. *
+
+> * The current conditions are not favorable for us. Our cause is popular in the West, but their sclerotic governments are reluctant to send us aid. The Soviet Union has aided the Communists, but not the socialists and democrats, in an attempt to shape Germany's future government. Poland and Czechoslovakia have sent some assistance against the fascists. *
+
+ - Social Democracy: An Alternate History
+
 For more information on the history of the Weimar Republic, see the "Library" page on the top left. (Modder note: Not yet implemented) If this is your first time playing the game, it is recommended that you read at least some of this information.
 
 Difficulty affects starting resources and inter-party relations, as well as how difficult it is to change party advisors and ideology, reduce dissent, and increase relations.
@@ -2092,59 +2104,59 @@ unavailable-subtitle: Not yet implemented
 
 TODO
 
-@bolsheviks
+@kpd
 title: Russian Social-Democratic Labor Party (Bolshevik)
 choose-if: achievement_game_completed
 unavailable-subtitle: Complete the game as one of the other parties first.
 
 **Russian Social-Democratic Labor Party (Bolsheviks)** - The "majority" faction of the RSDLP is in fact the smaller party. Established by Vladimir Lenin's arguments in the various RSDLP congresses, the Bolsheviks are seen as more radical than the Mensheviks. They are a disciplined and centralized party of professional revolutionaries who aim to act as the vanguard of a proletarian revolution. During Lenin's exile, the remaining members in Russia have become more moderate and accommodating.
 
-- @bolsheviks_2: Yes, I am a Bolshevik!
+- @kpd_2: Yes, I am a Bolshevik!
 - @party_selection: No, select a different party.
 
-@bolsheviks_2
+@kpd_2
 on-arrival: player_party_name = "Bolshevik"; player_party = "b"; b_is_player = 1; m_is_player = 0; player_in_soviet = 1; player_in_exco = 0; player_in_gov = 0;
 go-to: intros
 
 
-@mensheviks
+@spd
 title: Russian Social-Democratic Labor Party (Menshevik)
 
 **Russian Social-Democratic Labor Party (Mensheviks)** - The "minority" faction of the RSDLP, the Mensheviks emerged from party splits, reunifications, and further splits in the 1900s. It is in fact the larger party, seeking to organize a mass party among the working class. A social-democratic party based on the teachings of Karl Marx, the party argues that the current revolution is the "bourgeois" revolution. The task of socialists is to achieve a democratic republic and gain political and economic rights for workers. The Mensheviks are deeply divided on their attitudes towards the war and participation in a bourgeois government.
 
-- @mensheviks_2: Yes, I am a Menshevik!
+- @spd_2: Yes, I am a Menshevik!
 - @party_selection: No, select a different party.
 
 
-@mensheviks_2
+@spd_2
 on-arrival: player_party_name = "Menshevik"; player_party = "m"; m_is_player = 1; player_in_soviet = 1; player_in_exco = 1; player_in_gov = 0;
 go-to: intros
 
 
 
-@sr
+@catholics
 title: Party of Socialist-Revolutionaries (SRs)
 
 **Party of Socialist-Revolutionaries (SR)** - The SRs are based in the Russian ideology of *narodism*, or populism, which is an agrarian socialism that sees the traditional Russian village (the *obshchina*) as the basis of a future socialist society. Their support is strongest in the peasantry, but they have substantial support among workers as well. The SRs are deeply divided between left and right wings based on their attitudes towards the war and participation in government.
 
-- @sr_2: Yes, I am a Socialist-Revolutionary!
+- @catholics_2: Yes, I am a Socialist-Revolutionary!
 - @party_selection: No, select a different party.
 
 
-@sr_2
+@catholics_2
 on-arrival: player_party = "sr"; player_party_name = "SR"; sr_is_player = 1; m_is_player = 0; player_in_soviet = 1; player_in_exco = 1; player_in_gov = 0;
 go-to: intros
 
-@kadets
+@liberals
 title: Constitutional Democratic Party (Kadets)
 
 **Constitutional Democratic Party (Kadets)** - The Kadets were formerly on the left of the political spectrum, but they have moved to the center-right following the revolution. They are a liberal party whose goal is to establish a democratic republic or constitutional monarchy with moderate social reforms, while winning the war. They consider themselves a party representing all of Russian society, but are predominantly based in the middle class.
 
-- @kadets_2: Yes, I am a Kadet!
+- @liberals_2: Yes, I am a Kadet!
 - @party_selection: No, select a different party.
 
 
-@kadets_2
+@liberals_2
 on-arrival: player_party = "k"; player_party_name = "Kadet"; k_is_player = 1; m_is_player = 0; player_in_soviet = 0; player_in_gov = 1; player_in_exco = 0;
 go-to: intros
 
